@@ -1,0 +1,364 @@
+<section id="skills" [@routeAnimation]="routeAnimation">
+  <div class="container">
+    <div class="row">
+      <div class="text-center skills-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        Professional Skills
+      </div>
+    </div>
+    <div class="row">
+      <!-- PHP -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('php')" (mouseleave)="showBar('')">
+          <img src="assets/img/php-min.png" alt="PHP" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.php}">
+            <div class="text-center skill-title">PHP</div>
+            <div class="text-center skill-level">Experienced</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JAVA -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('java')" (mouseleave)="showBar('')">
+          <img src="assets/img/java-min.png" alt="Java" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.java}">
+            <div class="text-center skill-title">Java</div>
+            <div class="text-center skill-level">Beginner</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JS -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('javascript')" (mouseleave)="showBar('')">
+          <img src="assets/img/js-min.png" alt="JavaScript" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.javascript}">
+            <div class="text-center skill-title">Javascript</div>
+            <div class="text-center skill-level">Experienced</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POSTGRESQL -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('postgresql')" (mouseleave)="showBar('')">
+          <img src="assets/img/pgsql-min.png" alt="PostgreSQL" class="img-skill postgresql">
+          <div class="caption" [ngClass]="{'show-skill' : skills.postgresql}">
+            <div class="text-center skill-title">PostgreSQL</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MYSQL -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('mysql')" (mouseleave)="showBar('')">
+          <img src="assets/img/mysql-min.png" alt="MySQL" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.mysql}">
+            <div class="text-center skill-title">MySQL</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MONGODB -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('mongodb')" (mouseleave)="showBar('')">
+          <img src="assets/img/mongodb-min.png" alt="MySQL" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.mongodb}">
+            <div class="text-center skill-title">MongoDB</div>
+            <div class="text-center skill-level">Beginner</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- MSSQL -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('mssql')" (mouseleave)="showBar('')">
+          <img src="assets/img/sqlserver-min.png" alt="MSSQL" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.mssql}">
+            <div class="text-center skill-title">SQL Server</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NODEJS -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('nodejs')" (mouseleave)="showBar('')">
+          <img src="assets/img/nodejs-min.png" alt="NodeJS" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.nodejs}">
+            <div class="text-center skill-title">Node JS</div>
+            <div class="text-center skill-level">Beginner</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TYPESCRIPT -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('typescript')" (mouseleave)="showBar('')">
+          <img src="assets/img/ts-min.png" alt="TypeScript" class="img-skill typescript">
+          <div class="caption" [ngClass]="{'show-skill' : skills.typescript}">
+            <div class="text-center skill-title">Typescript</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ANGULAR -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('angular')" (mouseleave)="showBar('')">
+          <img src="assets/img/angular-min.png" alt="Angular" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.angular}">
+            <div class="text-center skill-title">Angular</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HTML5 -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('html')" (mouseleave)="showBar('')">
+          <img src="assets/img/html-min.png" alt="HTML5" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.html}">
+            <div class="text-center skill-title">HTML5</div>
+            <div class="text-center skill-level">Experienced</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CSS3 -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('css')" (mouseleave)="showBar('')">
+          <img src="assets/img/css3-min.png" alt="CSS3" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.css}">
+            <div class="text-center skill-title">CSS3</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+
+      <!-- SASS -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('sass')" (mouseleave)="showBar('')">
+          <img src="assets/img/sass-min.png" alt="SASS" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.sass}">
+            <div class="text-center skill-title">Sass</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GULP -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('gulp')" (mouseleave)="showBar('')">
+          <img src="assets/img/gulp-min.png" alt="GULP" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.gulp}">
+            <div class="text-center skill-title">Gulp</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BOOTSTRAP -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('bootstrap')" (mouseleave)="showBar('')">
+          <img src="assets/img/bootstrap-min.png" alt="BOOTSTRAP" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.bootstrap}">
+            <div class="text-center skill-title">Bootstrap</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEMANTIC-UI -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('semantic')" (mouseleave)="showBar('')">
+          <img src="assets/img/semantic-min.png" alt="SEMANTIC-UI" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.semantic}">
+            <div class="text-center skill-title">Semantic-UI</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JQUERY -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('jquery')" (mouseleave)="showBar('')">
+          <img src="assets/img/jquery-min.png" alt="JQUERY" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.jquery}">
+            <div class="text-center skill-title">jQuery</div>
+            <div class="text-center skill-level">Experienced</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JQUERY-UI -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('jqueryui')" (mouseleave)="showBar('')">
+          <img src="assets/img/ui-min.png" alt="JQUERY-UI" class="img-skill">
+          <div class="caption" [ngClass]="{'show-skill' : skills.jqueryui}">
+            <div class="text-center skill-title">jQuery-UI</div>
+            <div class="text-center skill-level">Proficient</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <!-- LARAVEL -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('laravel')" (mouseleave)="showBar('')">
+          <img src="assets/img/laravel-min.png" alt="LARAVEL" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.laravel}">
+            <div class="text-center skill-title">Laravel</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CODEIGNITER -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('codeigniter')" (mouseleave)="showBar('')">
+          <img src="assets/img/ci-min.jpg" alt="CODEIGNITER" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.codeigniter}">
+            <div class="text-center skill-title">Codeigniter</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SLIM -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('slim')" (mouseleave)="showBar('')">
+          <img src="assets/img/slim-min.png" alt="SLIM" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.slim}">
+            <div class="text-center skill-title">Slim</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PHALCON -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('phalcon')" (mouseleave)="showBar('')">
+          <img src="assets/img/phalcon-min.png" alt="LARAVEL" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.phalcon}">
+            <div class="text-center skill-title">Phalcon</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GIT -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('git')" (mouseleave)="showBar('')">
+          <img src="assets/img/git-min.png" alt="GIT" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.git}">
+            <div class="text-center skill-title">Git</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GITHUB -->
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="thumbnail" (mouseover)="showBar('github')" (mouseleave)="showBar('')">
+          <img src="assets/img/github-min.png" alt="GITHUB" class="img-skill img-circle">
+          <div class="caption" [ngClass]="{'show-skill' : skills.github}">
+            <div class="text-center skill-title">GitHub</div>
+            <div class="text-center skill-level">Intermediate</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>

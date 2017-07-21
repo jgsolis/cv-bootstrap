@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="row">
+      <div class="header-menu col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="navbar-header">
+          <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-menu" aria-expanded="false">
+            <span class="glyphicon glyphicon-align-justify"></span>
+          </button>
+          <span class="navbar-brand"><span class="header-title">Interactive</span> Resume</span>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-menu">
+          <ul class="nav navbar-nav">
+            <li><a routerLink="/home" routerLinkActive="active" (click)="collapse()">Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active" (click)="collapse()">About me</a></li>
+            <li><a routerLink="/experience" routerLinkActive="active" (click)="collapse()">Experience</a></li>
+            <li><a routerLink="/skills" routerLinkActive="active" (click)="collapse()">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
