@@ -22,6 +22,6 @@ Its purposal is to walk the employer through a professional profile that gives h
 
 ### **See it on GitHub Pages**
 
-[Interactive Resume](https://machacaheavy.github.io/cv-machaca)
+[Interactive Resume](https://jgsolis.github.io/)
 
-[GitHub](http://github.com/machacaheavy)
+[GitHub](http://github.com/jgsolis)
