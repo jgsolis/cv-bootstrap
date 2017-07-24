@@ -22,6 +22,10 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  download( file : string ){
+
+  }
+
 
 
 }

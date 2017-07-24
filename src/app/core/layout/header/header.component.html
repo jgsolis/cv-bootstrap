@@ -14,6 +14,14 @@
             <li><a routerLink="/about" routerLinkActive="active" (click)="collapse()">About me</a></li>
             <li><a routerLink="/experience" routerLinkActive="active" (click)="collapse()">Experience</a></li>
             <li><a routerLink="/skills" routerLinkActive="active" (click)="collapse()">Skills</a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                CV Files <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" (click)="download('word_eng')">Word English</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
