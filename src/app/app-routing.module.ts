@@ -5,7 +5,7 @@ import { LayoutComponent } from './core/layout/layout.component';
 
 const appRoutes : Routes = [
   { path: '', component: LayoutComponent, children: [
-    { path: '', loadChildren: './home/home.module#HomeModule' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', loadChildren: './home/home.module#HomeModule'},
     { path: 'about', loadChildren: './about/about.module#AboutModule' },
     { path: 'experience', loadChildren: './experience/experience.module#ExperienceModule' },
